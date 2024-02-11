@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circo Telecom User Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body onload="greeting();">
+    <div class="logo">
+        <img src="./images/logo.png" alt="Logo">
+    </div>
+    <div class="greeting-div">
+        <p class="greeting" id="greeting">Good Morning </p>
+        <span class="material-symbols-outlined" id="greet_icon">
+            light_mode
+            </span>
+    </div>
+   <div class="container">
+        <form action="./home.html" method="get">
+            <p class="login-text">Login/Signup</p>
+            <input type="text" name="username" id="username" placeholder="Username" autofocus autocomplete="on">
+            <input type="password" name="password" id="password" placeholder="Password">
+            <button>Login <span>Login</span></button>
+            <p class="have-account-text">Don't have an account? <a href="">Signup</a></p>
+        </form>
+   </div>
+   <footer>
+    <p class="copyright">Copyright. &copy; 2023 Circo Digital Inc.</p>
+    <audio src=""></audio>
+   </footer>
+
+
+   <script src="./app.js"></script>
+   <script src="./operations.js"></script>
+</body>
+</html>

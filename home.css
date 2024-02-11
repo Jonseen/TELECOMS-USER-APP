@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Montserrat, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    overflow-x: hidden;
+}
+
+:root {
+    --bg-white: #ffffff;
+    --bg-dark: #403f3f;
+    --text-white: #ffffff;
+    --text-dark: #000000;
+    --color-blue: #3B38F1;
+    --color-btn: #FFD34E;
+}
+
+::selection {
+    background-color: var(--bg-white);
+    color: var(--color-blue);
+}
+
+body {
+    background: var(--bg-white) url(./images/map.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-white);
+    align-items: center;
+    padding-inline: 100px;
+    padding-block: 20px;
+    border-bottom: .3px solid var(--bg-dark);
+}
+
+.header img {
+    width: 120px;
+}
+
+.header .nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.header .nav-links a {
+    color: var(--text-dark);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.header .logout {
+    color: var(--text-white);
+    background-color: var(--color-blue);
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* Main Section  */
+
+.main {
+    display: flex;
+    justify-content: left;
+    gap: 2em;
+    padding-inline: 100px;
+    padding-top: 1em;
+}
+
+.main .user-info {
+    width: 25%;
+    min-width: 300px;
+}
+.main .heading {
+    color: var(--text-white);
+    font-size: 20px;
+    background-color: var(--color-blue);
+    padding: 10px 10px;
+    text-align: left;
+    margin: 30px 0;
+    border-radius: 10px;
+
+}
+.main .card {
+    padding: 10px 10px;
+    border: .4px solid var(--bg-dark);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #ffffff5e;
+    backdrop-filter: blur(100px);
+}
+.main .card2 {
+    padding: 10px 10px;
+    border: .4px solid var(--color-btn);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: var(--text-white);
+    background-color: #3B38F1;
+    backdrop-filter: blur(100px);
+}
+
+.main .card2 p{
+    font-size: 24px;
+}
+
+.main .card h2 {
+    font-size: 14px;
+    margin-block: 10px;
+}
+.main .card2 h2 {
+    font-size: 14px;
+    margin-block: 10px;
+}
+
+.main .operations {
+    width: 75%;
+}
+
+.operations-tab {
+    display: block;
+    height: 390px;
+}
+
+.tab-links button {
+    display: block;
+    padding: 10px 30px;
+    /* width: 100%; */
+    cursor: pointer;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: all .2s ease;
+    
+}
+
+.tab-links button.active {
+    background-color: var(--color-blue);
+    color: var(--text-white);
+}
+
+.tab-links button:hover {
+    background-color: var(--color-blue);
+    color: var(--text-white);
+}
+.operations-tab .tab-links {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.operations-tab .tab-content {
+    width: 100%;
+    height: 300px;
+    display: none;
+    /* background-color: #686464; */
+    margin-block: 20px;
+
+}
+
+.operations-tab .show {
+    display: block;
+}
+.operations-tab .tab-content h3 {
+    margin-block: 15px;
+}
+
+.operations-tab .bal-info {
+    font-size: 16px;
+    margin-block: 10px;
+}
+.operations-tab .bal-details, .data-bal-details {
+    color: var(--color-blue);
+}
+.operations-tab .tab-content .top-up-amt {
+    display: block;
+    width: 300px;
+    height: 35px;
+    margin-top: 10px;
+    border: .4px solid var(--bg-dark);
+    border-radius: 5px;
+    /* padding: 20px 70px; */
+}
+
+.operations-tab .tab-content .top-up-amt input {
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    padding-inline: 10px;
+    /* margin-top: 20px; */
+    /* margin-block: 20px ; */
+}
+
+.operations-tab .tab-content .recharge-btn {
+    display: block;
+    width: 300px;
+    margin-block: 15px;
+    padding-block: 15px;
+    cursor: pointer;
+    outline: none;
+    /* border-radius: 2px; */
+
+}
+.operations-tab .tab-content .recharge-btn:hover {
+    background-color: var(--color-blue);
+    color: var(--text-white);
+}
+
+.operations-tab .data-plan {
+    font-size: 14px;
+    margin-block: 5px;
+}

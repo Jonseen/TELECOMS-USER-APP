@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circo Telecom User - Home</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+  <div class="header">
+    <img src="./images/logo.png" alt="Logo" srcset="">
+    <div class="nav-links">
+        <!-- <a href="">Home</a> -->
+        <a href="">USSD</a>
+        <a href="">Connected Devices</a>
+        <a href="">Messages</a>
+    </div>
+    <a href="./base.html" class="logout">Logout</a>
+  </div>
+
+  <!-- Main Section Contents -->
+
+  <div class="main">
+    <div class="user-info">
+        <h1 class="heading">User Information</h1>
+        <div class="card">
+            <h2>Name</h2>
+            <p id="username-id">Johnson Lawrence</p>
+        </div>
+        <div class="card">
+            <h2>IP Address</h2>
+            <p id="ip-address">192.168.0.1</p>
+        </div>
+        <div class="card2">
+            <h2>Airtime Balance</h2>
+            <!-- <input type="text" name="airtime-bal" id="airtime-bal" value="20000"> -->
+            <p id="airtime-bal">20000</p>
+        </div>
+        <div class="card2">
+            <h2>Data Balance</h2>
+            <p id="data-bal">2064 </p><span>mb</span>
+        </div>
+    </div>
+    <div class="operations">
+        <h1 class="heading">User operations</h1>
+        <div class="card operations-tab">
+            <div class="tab-links">
+                <button class="tab-link active">Check Balance</button>
+                <button class="tab-link">Airtime top-up</button>
+                <button class="tab-link">Buy Data</button>
+                <button class="tab-link">Borrow Airtime</button>
+                <button class="tab-link">Borrow Data</button>
+            </div>
+            <div class="tab-content show">
+                <h3>Your balance Information:</h3>
+                <p class="bal-info">
+                Airtime Balance:  </p>
+                <h1 class="bal-details" id="bal-details">20000</h1>
+                <p class="bal-info">
+                Data Balance: 
+                </p>
+                <h1 class="data-bal-details" id="data-bal-details">2064</h1><span>mb</span>
+            </div>
+            <div class="tab-content">
+                <h3>Enter the top-up amount:</h3>
+                <div class="top-up-amt">
+                <input type="number" name="top-up-amt" id="top-up-amt" value="100" min="100" max="100000">
+                </div>
+                <button class="recharge-btn" id="recharge-btn">Recharge Now</button>
+            </div>
+            <div class="tab-content">
+                <h3>Choose a data plan:</h3>
+
+                <p class="data-plan">1. 250mb for 200  </p>
+                <p class="data-plan">2. 1024mb for 1000 </p>
+                <p class="data-plan">3. 7000mb for 7000 </p>
+
+                <div class="top-up-amt">
+                <input type="number" name="data-plan-choice" id="data-plan-choice" value="" min="1" max="3" placeholder="select number">
+                </div>
+                <button class="recharge-btn" id="purchase-data-btn">Purchase Data</button>
+                <p id="error-div"></p>
+            </div>
+            <div class="tab-content">
+                <h3>You are eligible for:</h3>
+
+                <p class="data-plan">1. 2000naira </p>
+                <p class="data-plan">2. 1000naira </p>
+                <p class="data-plan">3. 500naira </p>
+
+                <div class="top-up-amt">
+                <input type="number" name="top-up-amt" id="borrow-airtime-option" value="" min="1" max="3" placeholder="select number">
+                </div>
+                <button class="recharge-btn" id="borrow-airtime-btn">Continue</button>
+                <p id="error-div2"></p>
+
+            </div>
+            <div class="tab-content">
+                <h3>Choose a BMD plan:</h3>
+
+                <p class="data-plan">1. 250mb for 270  </p>
+                <p class="data-plan">2. 1024mb for 1200 </p>
+                <p class="data-plan">3. 7000mb for 7500 </p>
+
+                <div class="top-up-amt">
+                <input type="number" name="top-up-amt" id="borrow-data-option" value="" min="1" max="3" placeholder="select number">
+                </div>
+                <button class="recharge-btn" id="borrow-data-btn">Borrow Data</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- <div class="account-info">
+        <h1 class="heading">Account Information</h1>
+
+
+    </div> -->
+  </div>
+
+
+   <script src="./app.js"></script>
+   <script src="./operations.js"></script>
+</body>
+</html>
